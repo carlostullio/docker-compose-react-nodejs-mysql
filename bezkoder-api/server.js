@@ -5,10 +5,10 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: process.env.CLIENT_ORIGIN || "http://localhost:8081"
+  origin: process.env.CLIENT_ORIGIN || "https://bug-free-space-fiesta-jj9qrpjpg69hqwwp-8888.app.github.dev"
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // parse requests of content-type - application/json
 app.use(express.json());
